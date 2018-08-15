@@ -1,6 +1,6 @@
 # Laravel 5.5 API From Scratch Using Resources
 
-This is a tutorial to create API in PHP/Laravel Framework which is followed on youtube. [a link][1]
+This is a tutorial to create API in PHP/Laravel Framework which is followed on youtube. [Youtube][1]
 
 [1]: https://www.youtube.com/watch?v=4pc6cgisbKE 
 
