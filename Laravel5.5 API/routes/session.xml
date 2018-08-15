@@ -1,0 +1,52 @@
+<sessionSetup term="Fall" year="2018" campus="CIU/HASPOLAT" dateFormat="yyyy/M/d" created="Tue Aug 14 03:40:48 CEST 2018">
+ <!--
+ Element session is optional, needed to create and/or update acedemic session information 
+-->
+<session startDate="2018/9/20" endDate="2019/01/11" classEndDate="2018/12/28" examStartDate="2019/01/03" eventStartDate="2019/01/24" eventEndDate="2019/01/25">
+
+<holidays>
+	<holiday date="2019/02/12"/>
+	<break startDate="2019/02/12" endDate="2019/02/15"/>
+</holidays>
+</session>
+ <!--
+ Element managers is optional, needed to create/update timetable managers (when incremental=true, managers not present in this file will not be deleted) 
+-->
+<managers incremental="true">
+	<manager externalId="8" firstName="Sedef" lastName="Çakır" email="scakir@ciu.edu.tr">
+		<department code="0101"/>
+		<role reference="Curriculum Mgr" primary="true" emails="true"/>
+	</manager>
+	<manager externalId="9" firstName="Elif" lastName="Binboğa" email="ebinboga@ciu.edu.tr">
+		<department code="0101"/>
+		<role reference="Dept Sched Mgr" primary="true" emails="true"/>
+	</manager>
+</managers>
+
+<departments>
+	<department code="0100" externalId="Information Sys Engineering" abbreviation="ISE" name="ınformation Systems Engineering">
+		<eventManagement enabled="true"/>
+		<required time="false" room="false" distribution="false"/>
+		<instructorPreferences inherit="true"/>
+	</department>
+	<department code="0101" abbreviation="CE" name="Civil Engineering">
+		<eventManagement enabled="true"/>
+		<required time="false" room="false" distribution="false"/>
+		<instructorPreferences inherit="true"/>
+	</department>
+</departments>
+
+<subjectAreas>
+<subjectArea abbreviation="ALG" title="Algebra" department="0101"/>
+<subjectArea abbreviation="CALC" title="Calculus" department="0101"/>
+<subjectArea abbreviation="CHM" title="Chemistry" department="0101"/>
+<subjectArea abbreviation="COM" title="Communications" department="0100"/>
+<subjectArea abbreviation="C S" title="Computer Science" department="0100"/>
+<subjectArea abbreviation="ECON" title="Economics" department="0100"/>
+<subjectArea abbreviation="ENGL" title="English" department="0100"/>
+<subjectArea abbreviation="ENGR" title="Engineering" department="0101"/>
+<subjectArea abbreviation="GER" title="German" department="0101"/>
+<subjectArea abbreviation="PHYS" title="Physics" department="0101"/>
+<subjectArea abbreviation="POL" title="Political Science" department="0101"/>
+</subjectAreas>
+</sessionSetup>

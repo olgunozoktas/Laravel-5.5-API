@@ -1,0 +1,27 @@
+<buildingsRooms campus="CIU/HASPOLAT" term="Fall" year="2018">
+	
+	<building externalId="14Q0BS1C12Q3I1GNDC5A" abbreviation="ST" locationX="449" locationY="392" name="Science and Technology">
+		
+		<room externalId="14P0I32VHG3I71IISIKV" locationX="447" locationY="392" roomNumber="ST202" roomClassification="conference" capacity="45" instructional="False" scheduledRoomType="computingLab">
+			<roomDepartments>
+				<assigned departmentNumber="0100" percent="100"/>
+			</roomDepartments>
+		</room>
+
+		 <!--  area (square footage) since UniTime 3.4.128  -->
+		<room externalId="14P3G41C10IRK1GNDDEB" locationX="325" locationY="392" area="1265.3" roomNumber="ST203" roomClassification="classroom" capacity="58" instructional="True" scheduledRoomType="genClassroom">
+			<roomDepartments>
+				<assigned departmentNumber="0100" percent="100"/>
+				<scheduling departmentNumber="1128" percent="50"/>
+				<scheduling departmentNumber="1146" percent="50"/>
+			</roomDepartments>
+				<roomFeatures>
+				<roomFeature feature="seatingType" value="Tablet Arm Chairs"/>
+				<roomFeature feature="dvd" value="DVD"/>
+				<roomFeature feature="computerProjection" value="Computer Projection"/>
+				<roomFeature feature="puccComputer" value="Computer"/>
+				<roomFeature feature="feetOfChalkboard" value="20"/>
+			</roomFeatures>
+		</room>
+	</building>
+</buildingsRooms>
