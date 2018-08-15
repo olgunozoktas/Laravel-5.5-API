@@ -258,7 +258,7 @@ Body -> raw
      */
     public function store(Request $request)
     {   
-        //Check the method type
+        //Check the method types
         //If its a put method then article_id must be included
         $article = $request->isMethod('put') ? Article::findOrFail($request->article_id) : new Article;
 
