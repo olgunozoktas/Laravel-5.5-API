@@ -247,7 +247,7 @@ Body -> raw
         //Return collection of articles as a resource
         return ArticleResource::collection($articles);
 
-        //If u want to return a list then you have to write ::collection
+        //If u want to return a list then you have to write ::collection method
     }
 
     /**
