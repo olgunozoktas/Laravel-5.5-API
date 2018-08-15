@@ -302,6 +302,8 @@ Body -> raw
             return new ArticleResource($article);
         }
     }
+
+    EOF
 ~~~~~~~~
 
 
