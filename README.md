@@ -258,7 +258,7 @@ Body -> raw
      */
     public function store(Request $request)
     {
-        //eğer put methodu ise içerisinde article_id olacaktir
+        //If put method then article_id must be included
         $article = $request->isMethod('put') ? Article::findOrFail($request->article_id) : new Article;
 
         $article->id = $request->input('article_id');
