@@ -4,11 +4,11 @@ This is a tutorial to create API in PHP/Laravel Framework which is followed on y
 
 [1]: https://www.youtube.com/watch?v=4pc6cgisbKE 
 
-# 1- How to Create A Migration?
+## 1- How to Create A Migration?
 
 `php artisan make:migration create_articles_table --create=articles`
 
-# 2- How to Change Default String Length?
+## 2- How to Change Default String Length?
 
 1. Go to app\Providers\AppServiceProvider.php
 
@@ -23,7 +23,7 @@ add into boot() {
 	
 ~~~~~~~~
 
-# 3- How to Create Article Seeder?
+## 3- How to Create Article Seeder?
 
 `php artisan make:seeds ArticlesTableSeeder`
 
@@ -35,7 +35,7 @@ add factory(App\Article::class, 30)->create();
 to the run() function
 ~~~~~~~~
 
-# 4- How to Make ArticlesTableSeeder is the default Seeder?
+## 4- How to Make ArticlesTableSeeder is the default Seeder?
 
 1. Go to seeds\DatabaseSeeder.php 
 
@@ -43,7 +43,7 @@ to the run() function
 add $this->call(ArticlesTableSeeder.php) to run()
 ~~~~~~~~
 
-# 5- How to Use A Model For Seeder? 
+## 5- How to Use A Model For Seeder? 
 
 ~~~~~~~~
 php artisan make:factory ArticleFactory
@@ -57,26 +57,26 @@ add $factory->define(App\Article::class, function (Faker $faker) {
 });
 ~~~~~~~~
 
-# 6- How to Create A Model?
+## 6- How to Create A Model?
 
 ~~~~~~~~
 php artisan make:model Article
 ~~~~~~~~
 
-# 7- How To Run migrations?
+## 7- How To Run migrations?
 
 ~~~~~~~~
 php artisan migrate 
 php artisan migrate:refresh //Optional --seed to renew all migrations
 ~~~~~~~~
 
-# 8- How To Run Seeds (to generate fake articles)?
+## 8- How To Run Seeds (to generate fake articles)?
 
 ~~~~~~~~
 php artisan db:seed
 ~~~~~~~~
 
-# 9- How To Create Controller Class For Article?
+## 9- How To Create Controller Class For Article?
 
 ~~~~~~~~
 php artisan make:controller ArticleController --resource
@@ -86,7 +86,7 @@ it will create an controller in App\Http\Controllers\ArticleController and they 
 We do not need create and update instead we will use store for both. Also delete edit as well.
 ~~~~~~~~
 
-# 10- How To Define Routes For API?
+## 10- How To Define Routes For API?
 
 1. Go to routes folder in api.php
 
@@ -115,7 +115,7 @@ Route::delete('article/{i}', 'ArticleController@destroy');
 //@function_name
 ~~~~~~~~
 
-# 11 - How To Create a Resource?
+## 11 - How To Create a Resource?
 
 ~~~~~~~~
 php artisan make:resource Article
@@ -126,7 +126,7 @@ in this folder there will be Article.php
 there is an method array which return all articles 
 ~~~~~~~~
 
-# 12- How To Configure Resource To Return Just Id Title And Body?
+## 12- How To Configure Resource To Return Just Id Title And Body?
 
 app\Http\Resources\Article
 
@@ -140,7 +140,7 @@ return [
 ];
 ~~~~~~~~
 
-# 13- How To Return Single Article?
+## 13- How To Return Single Article?
 
 ~~~~~~~~
 ArticleController.php ->    
@@ -157,7 +157,7 @@ ArticleController.php ->
 }
 ~~~~~~~~    
 
-# 14- How To Remove Data Field In Single Json Response?
+## 14- How To Remove Data Field In Single Json Response?
 
 ~~~~~~~~
 Method 1- 
@@ -185,7 +185,7 @@ in boot() function add
 Resource::withoutWrapping();
 ~~~~~~~~
 
-# 15- How To Return Another Useful Information With The Api
+## 15- How To Return Another Useful Information With The Api
 
 1. Go to Resources\Article.php
 
@@ -198,7 +198,7 @@ add this function     public function with($request){
     }
 ~~~~~~~~
 
-# 16- How To Make A Post Request In Postman?
+## 16- How To Make A Post Request In Postman?
 
 ~~~~~~~~
 Headers
@@ -213,7 +213,7 @@ Body -> raw
 }
 ~~~~~~~~
 
-# 17- How To Make A Put Request In Postman?
+## 17- How To Make A Put Request In Postman?
 
 ~~~~~~~~
 Headers
@@ -229,7 +229,7 @@ Body -> raw
 }
 ~~~~~~~~
 
-# 18- The Update / Post Methods (Others As Well)
+## 18- The Update / Post Methods (Others As Well)
 
 1. Go To app\Http\Controllers\ArticleController.php
 
